@@ -30,6 +30,7 @@ def audio_query(text, filename, speaker, removes):
                     os.remove(filename)
     except:
         print ("なんかエラーだって")
+        sys.exit(-1)
 
 def main():
     speaker = 1
@@ -45,4 +46,5 @@ def main():
 
 if __name__ == '__main__':
     main()
+    sys.exit()
 
